@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './CSS/main.css';
+import {useState} from 'react';
+import Header from './Components/Header';
+import Navbar from './Components/Navbar';
+import Article from './Components/Article';
 
 function App() {
+
+  const [chosenTab, setChosenTab] = useState(0);
+
+  function changeTab(tabNo){
+    setChosenTab(tabNo);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Navbar changeTab = {changeTab}/> 
+      <Article id="aboutMe" heading="Minä" />
+      <Article id="myProjects" heading="Projektit" />
+      <Article id="links" heading="Linkit" />
+
+    </>
   );
 }
 
