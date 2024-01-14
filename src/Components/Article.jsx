@@ -17,10 +17,12 @@ function Article (props){
         case "links":
             content = <Links />
             break;
+        default:
+            break;
     }   
 
     return (
-        <article id={props.id}>
+        <article id={props.id} class="box_shadow">
             <h1>{props.heading}</h1>
             {content}
         </article>);
