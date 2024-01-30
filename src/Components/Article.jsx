@@ -22,7 +22,7 @@ function Article (props){
     }   
 
     return (
-        <article id={props.id} class="box_shadow">
+        <article id={props.id} className="box_shadow">
             <h1>{props.heading}</h1>
             {content}
         </article>);

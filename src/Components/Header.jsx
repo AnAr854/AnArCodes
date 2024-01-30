@@ -11,9 +11,11 @@ function Header (){
 
     return (
         <header>
-            <h1>Anne Arhipoff</h1>
-            <Navbar changeTab={changeTab}/>
-        </header>);
+          {/* <img src="img/ilmanTaustaa2.png" id="mainPortrait" alt="image of me"/> */}
+          <h1>Anne Arhipoff</h1>
+          <Navbar changeTab={changeTab}/>
+        </header>
+       );
 }
 
 export default Header;
