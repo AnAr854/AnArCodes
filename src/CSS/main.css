@@ -1,9 +1,23 @@
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1230px) {
     header h1{
-        font-size: 4rem !important;
+        font-size: 7rem !important;
+    }
+    #mainPortrait {
+        height: 60% !important;
     }
 }
-
+@media only screen and (max-width: 1070px) {
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        margin-top: 40%!important;
+        font-size: 6rem !important;
+    }
+    #mainPortrait {
+        height: 50% !important;
+    }
+}
 body{
     margin: 0;
     box-sizing: border-box;
@@ -29,15 +43,16 @@ main {
 
 header {
     height: 90vh;
-    background: rgb(2,0,36);
     background: linear-gradient(145deg, rgba(2,0,36,1) 0%, rgba(0,128,128,1) 35%, rgba(255,223,34,1) 100%);
     border-radius: 10px;
     color: #FFFFF0;
-    margin: 3.3vh 0.5%;
-    padding: 1%;
+    margin: 3.3vh 1vw;
+    padding: 0 5%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 /* navbar-icons bigger */
@@ -65,9 +80,8 @@ a.MuiButtonBase-root.MuiTab-root.MuiTab-labelIcon.MuiTab-textColorPrimary.css-ay
 }
 
 header h1{
-    margin-top: 10%;
-    text-align: center;
     font-size: 8rem; 
+    margin-top: 20rem;
 }
 
 .css-heg063-MuiTabs-flexContainer {
@@ -80,7 +94,8 @@ h1{
 }
 
 .projectHeading{
-    margin-top: 3rem;
+    margin: 3rem 0 0 0;
+    font-size: 2.5rem;
 }
 
 p, a {
@@ -105,13 +120,13 @@ article {
     display: flex;
     align-items: center;
     background-color: #FFFFF0;
-    margin: 4% 10% 0;
-    padding: 0% 5% 10%;
+    margin: 4% 8% 0;
+    padding: 3% 0;
     flex-direction: column;
 }
 
 iframe {
-    width: 68%;
+    width: 90%;
     height: 70vh;
 }
 
@@ -132,3 +147,27 @@ iframe {
     border: 3px solid #878787;
     border-radius: 50%;
 }
+
+#mainPortrait {
+    position: absolute;
+    height: 70%;
+    left: 1em;
+    bottom: 0;
+    opacity: 0.9;
+}
+
+/* PROJECT IMAGE GALLERY */
+.css-uym98a-MuiImageList-root {
+    width: 82% !important;
+    height: 48rem !important;
+}
+
+/* .largerProjectImg{
+    border: black double 8px;
+    transform: perspective(1px) scale(1.8);
+    transition: transform 0.5s ease;
+    z-index: 5;
+    position: absolute !important;
+    transform-origin: left;
+    background-color: #FFFFF0;
+} */

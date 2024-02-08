@@ -3,6 +3,10 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 
+const handleImageLoaded =(event)=> {
+  event.target.classList.toggle("largerProjectImg");
+}
+
 function ProjectGallery(props){
     let itemData = props.wantedImgs;
 
@@ -15,10 +19,10 @@ function ProjectGallery(props){
                 src={`${item.img}?w=248&fit=crop&auto=format`}
                 alt={item.title}
                 loading="lazy"
+                onClick= {handleImageLoaded}
               />
               <ImageListItemBar
                 title={item.title}
-                subtitle={<span>by: {item.author}</span>}
                 position="below"
               />
             </ImageListItem>
