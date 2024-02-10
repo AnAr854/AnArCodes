@@ -35,11 +35,11 @@ const ipaImgs = [{
         },
         {
           img: ipaSource + 'verkkokauppaWP.png',
-          title: 'WprdPress verkkokauppa',
+          title: 'WordPress verkkokauppa',
         },
         {
           img: ipaSource + 'admin.png',
-          title: 'Verkkokaupan ylläpitäjälle helposti lisäys-, poisto- ja muokkaus-toiminnot',
+          title: 'Verkkokaupan ylläpitäjälle lisäys-, poisto- ja muokkaus-toiminnot',
         }];
     const kirjanpitajaImgs = [{
           img: kirjanpitajaSource + 'orgValinta.png',
@@ -48,11 +48,6 @@ const ipaImgs = [{
         {
           img: kirjanpitajaSource + 'tositesyotto.png',
           title: 'Tositteen syöttönäkymä',
-        },
-        {
-          img: kirjanpitajaSource + 'tablettinakyma.png',
-          title: 'Ohjelman tablettinäkymä',
-          
         }];
 
 function Projects(){
@@ -61,8 +56,9 @@ function Projects(){
             <h2 class="projectHeading">Matopeli</h2>
             <p>Ensimmäisen projekti on hieman nykyaikaistettu nostalginen matopeli ja valmistui alkukeväällä 2023. (Pelataksesi klikkaa peliruutua ja ohjaa nuolinäppäimillä). Madon vauhti kasvaa asteittain. <br></br>Harjoittelun kohteena: Javascript, HTML, CSS</p>
             <iframe title="Matopeli" src="CrazyWormGameFinal/index.html" class="box_shadow"></iframe>
-            <h2>Onnenpyörä</h2>
+            <h2 class="projectHeading">Onnenpyörä</h2>
             <p>Ensimmäisenä kouluvuonna opintoihin kuului Javaa. Koulukaverin ideasta kehitimme muutaman opiskelijan kesken Java-version klassisesta Onnenpyörä-visailusta. Lisää oppiaksemme valitsimme käyttöliitymäksi Java Swingin. Pelitoiminnallisuuden osilta koodasin vuoronvaihdot ja niihin liittyvät toiminnot ja osia pisteenlaskusta, sekä pelaajan nimen ja pisteiden näkyvyys pelatessa. Myös valitun konsonantin ja ostetun vokaalin etsintä ja paljastus arvattavassa fraasissa on omaa tuotantoa. Ohisektorin toiminta myös. Ja ratkaisumetodi.  </p>
+            <Onnenpyora />
             <h2 class="projectHeading">Fribago</h2>
             <p>Suurin projekti opintojen ohessa on loppukeväällä 2023 kolmen koulukaverin kanssa aloitettu sivusto frisbeegolf tulosten kirjaamiseen ja tilastointiin. Tällä hetkellä Fribago on testausvaiheessa rajatulla käyttäjämäärällä. Sivustossa on kiinnitetty huomiota responsiivisuuteen, koska todennäköinen käyttäjä käyttää sivustoa mobiililaitteella. Projekti etenee opintojen ohessa kokoajan. <br></br>Tästä olen saanut todella hyvää harjoitusta PHP, Javascript, MySQL, HTML ja CSS taitoihini.</p>
             {/* <ProjectGallery wantedImgs={fribagoImgs}/> */}
