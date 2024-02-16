@@ -1,18 +1,14 @@
 import React from "react";
-import Me from './Me';
-import Projects from './Projects';
 import Links from './Links';
+import Navbar from "./Navbar";
 
 function Article (props){
 
     let content = "";
       
     switch(props.id){
-        case "aboutMe":
-            content = <Me />
-            break;
         case "myProjects":
-            content = <Projects />
+            content = <Navbar />
             break;
         case "links":
             content = <Links />
