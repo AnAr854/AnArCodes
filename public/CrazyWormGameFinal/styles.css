@@ -24,7 +24,7 @@ body{
     grid-template-rows: repeat(21, 1em);
     column-gap: 0;
     row-gap: 0;
-    border: solid #878787 0.3em;
+    border: solid #f6dd3c 0.3em;
     
 }
 #wormHead{
