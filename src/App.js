@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <Article id="myProjects" heading="Projektit" />
-      <Article id="links" heading="Linkit" />
+      <Article id="links" heading="Löydät minut myös täältä:" />
     </>
   );
 }
