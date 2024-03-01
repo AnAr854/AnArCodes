@@ -1,133 +1,55 @@
 /* MEDIA QUERYS */
-@media only screen and (max-width: 1550px) {
-    :root{
-        font-size: 14px;
+@media only screen and (max-width: 1570px) {
+    header >h1{
+        font-size: 6em !important;
     }
 }
 
-@media only screen and (max-width: 1350px) {
-    :root{
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-width: 1250px) {
-    header > h1{
-        font-size: 7rem !important;
-    }
-}
-
-@media only screen and (max-width: 1145px) {
+@media only screen and (max-width: 1220px) {
     header > h1{
         font-size: 5em !important;
     }
 }
-@media only screen and (max-width: 1070px) {
-    #mainPortrait {
-        max-height: 53%;
+
+@media only screen and (max-width: 1020px) { 
+    header > h1{
+        font-size: 4em !important;
     }
-    .projectDescription {
-        min-width: 85%;
-    }
-    section {
-        grid-template-columns: repeat(1, 1fr) !important;
+    .css-heg063-MuiTabs-flexContainer {
+        width: 80vw !important;
     }
 }
 
 @media only screen and (max-width: 860px) {
-    header{
-        text-align: left !important;
-        padding: 0 !important;
-    }
-    header > p{
-        min-width: 95% !important;
-        padding-left: 0;
-    }
-    header > p, header > h1{
-        margin-right: 5% !important;
+    header > h1{
+        font-size: 2.5em !important;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    header{
-        grid-template-columns: repeat(1, 1fr) !important;
-        grid-template-rows: 10% 10% 80% !important;
-    }
-    header > h1, header > h2{
-        margin-left: 4% !important;
-    }
-    .headerText {
-        margin-top: 0 !important;
-        min-width: 92% !important;
-        text-align: center;
-        margin-left: 4% !important;
-    }
-    #mainPortrait{
-        position: absolute;
-        opacity: 0.7;
-        height: 30% !important;
-    }
-    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
-        font-size: 1em !important;
-        font-weight: 400 !important;
-    }
-}
 @media only screen and (max-width: 650px) {
-    :root{
-        font-size: 12px !important;
-    }
-}
-@media only screen and (max-width: 550px) {
-    :root{
-        font-size: 11px !important;
-    }
-}
-@media only screen and (max-width: 500px) {
-    :root{
-        font-size: 10px !important;
-    }
     .css-heg063-MuiTabs-flexContainer {
         flex-direction: column !important;
     }
-    .css-1aquho2-MuiTabs-indicator{
-        display: none;
-    }
-    #links > h1{
-        /* font-size: 1.5em !important; */
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root, .css-1t4lqmc-MuiButtonBase-root-MuiTab-root, .css-1ocpf3a-MuiButtonBase-root-MuiTab-root {
+        width: 100% !important;
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 510px) {
     header > h1{
-        font-size: 4em !important;
+        font-size: 1.5em !important;
     }
-    :root{
-        font-size: 11px !important;
-    }
-    .headerText{
-        margin-top: 4em !important;
-    }
-    .projectHeading{
-        margin: auto;
-        /* font-size: 1.2em !important; */
-    }
-    figure{
-        margin: 0 !important;
-    }
-    #mainPortrait{
-        height: 20% !important;
+    header > h2{
+        font-size: 1em;
     }
 }
-@media only screen and (max-width: 400px) {
-    :root{
-        font-size: 10px !important;
+
+@media only screen and (max-width: 345px) {
+    header > h1{
+        font-size: 1.3em !important;
     }
 }
-@media only screen and (max-width: 375px) {
-    :root{
-        font-size: 8px !important;
-    }
-}
+
 /* COLORS */
 :root{
     width: 100% !important;
@@ -167,7 +89,7 @@ main {
 }
 
 header {
-    height: 80vh;
+    height: min-content;
     background: linear-gradient(145deg, rgba(2,0,36,1) 0%, var(--darkMint) 35%, var(--brightYellow) 100%);
     border-radius: 10px;
     color: var(--creamWhite);
@@ -197,19 +119,45 @@ article {
     justify-content: center;
 }
 
-/* PROJECT NAVIGATION */
-
-.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
-    color: var(--brightYellow) !important;
-}
+/**** PROJECT NAVIGATION ****/
 .css-1aquho2-MuiTabs-indicator {
     display: none;
+}
+.css-1ocpf3a-MuiButtonBase-root-MuiTab-root>.MuiTab-iconWrapper {
+    height: 50%;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root, .css-1t4lqmc-MuiButtonBase-root-MuiTab-root, .css-1ocpf3a-MuiButtonBase-root-MuiTab-root {
+    font-size: 1.9em !important;
+    width: 50%;
+    margin: auto;
+    min-height: 4em !important;
+    padding: 0 !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-1t4lqmc-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-1ocpf3a-MuiButtonBase-root-MuiTab-root.Mui-selected{
+    border-bottom: #ffdf22 dotted 2px !important;
+    border-radius: 50px;
+}
+.navLinks, .navLinks2, .navLinks3{
+    margin-top: 1%;
+}
+.css-heg063-MuiTabs-flexContainer {
+    width: 60vw;
+    justify-content: space-around;
+    align-items: center;
+}
+hr {
+    height: 3px;
+    width: 60%;
+    margin: 4em;
+    border: none;
+    outline: none;
+    background: linear-gradient(0.25turn, var(--darkMint), var(--creamWhite), var(--brightYellow));
 }
 
 /* TEXTS */
 
 header h1{
-    font-size: 8rem; 
+    font-size: 8em; 
     margin: auto;
 }
 
@@ -228,13 +176,16 @@ h1{
     width: 32%;
     text-align: center;
     font-size: 1.6rem;
-    /* border: var(--lightMintBorder) 4px;
-    border-style: solid none; */
     padding: 0.6em;
-    /* border-radius: 7px; */
     margin-top: 1.5em;
 }
 
+.multicolorText{
+    background-image: linear-gradient(to right, rgb(61, 7, 61), rgb(152, 25, 25), rgb(18, 18, 118), rgb(15, 112, 15), rgb(250, 165, 54), rgb(250, 232, 70));
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 p, a {
     font-size: 1.3rem;
     font-weight: bolder;
@@ -242,26 +193,14 @@ p, a {
     padding-left: 2%;
 }
 
-#links > div {
+/* #links > div {
     display: flex;
     width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
+} */
 
-/* #links a > svg > path{
-    background: linear-gradient(135deg, var(--darkMint), #ffdf22);
-} */
-/* #links a:visited{
-    color: #008080;
-}
-#links a:hover{
-    color:#ffdf22;
-} */
-.navLinks, .navLinks2{
-    margin-top: 1%;
-}
 
 /* WORM GAME  */
 
@@ -307,3 +246,4 @@ section {
     font-weight: 600;
     font-size: 1.8em;
 }
+
