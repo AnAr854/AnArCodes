@@ -5,7 +5,7 @@ function ProjectImagesContainer (props){
 
        const images = props.imagesToAdd.map((img) =>
             <figure key={mapKey++} >
-                <figcaption class="bolderText">{img.title}</figcaption>
+                <figcaption>{img.title}</figcaption>
                 <img src={img.src} class="projectImg" alt={props.alt}></img>
             </figure>
         );

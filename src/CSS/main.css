@@ -24,6 +24,10 @@
     header > h1{
         font-size: 2.5em !important;
     }
+    section.projectImages {
+        grid-template-columns: 1fr !important;
+        margin: 0em auto !important;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -36,11 +40,14 @@
 }
 
 @media only screen and (max-width: 510px) {
-    header > h1{
-        font-size: 1.5em !important;
+    :root{
+        font-size: 12px;
     }
     header > h2{
         font-size: 1em;
+    }
+    .projectDescription{
+        min-width: 92%;
     }
 }
 
@@ -96,7 +103,7 @@ header {
     padding: 5% 0 0 0;
     display: grid;
     grid-template-columns: 33% 67%;
-    grid-template-rows: 26% 14% 60%;
+    grid-template-rows: 30% 50% 20%;
     text-align: center;
     letter-spacing: 2px;
     align-items: start;
@@ -182,7 +189,6 @@ h1{
 
 .multicolorText{
     background-image: linear-gradient(to right, rgb(61, 7, 61), rgb(152, 25, 25), rgb(18, 18, 118), rgb(15, 112, 15), rgb(250, 165, 54), rgb(250, 232, 70));
-
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -193,13 +199,18 @@ p, a {
     padding-left: 2%;
 }
 
-/* #links > div {
+header > a {
+    margin-right: 5% !important;
+    color: var(--darkMint) !important;
+    text-decoration: none;
+}
+#links > div {
     display: flex;
     width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-} */
+}
 
 
 /* WORM GAME  */
@@ -217,7 +228,7 @@ iframe {
 }
 
 /* PROJECT IMAGES */
-section {
+section.projectImages {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     margin: 1em 2em;
@@ -225,7 +236,13 @@ section {
 
 .projectImg{
     width: 100% !important;
-    max-height: 47em;
+}
+
+figcaption{
+    min-height: 4em;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.2em;
 }
 
 #wormGameImg{
@@ -242,8 +259,30 @@ section {
     border-radius: 10px;
 }
 
-.bolderText{
-    font-weight: 600;
-    font-size: 1.8em;
+/* More About Me Page */
+ul{
+    line-height: 2.5em;
+}
+ul li{
+    list-style-type: none;
 }
 
+td, th{
+    font-family: "Noto Serif Khojki", serif !important;
+    color: var(--creamWhite) !important;
+}
+th{
+    font-weight: bold !important;
+    font-size: 1.3em !important;
+}
+td{
+    font-weight: bolder !important;
+    font-size: 1.1em !important;
+}
+.MuiSvgIcon-root{
+    color: var(--creamWhite) !important;
+}
+th.MuiTableCell-root.MuiTableCell-head.MuiTableCell-sizeSmall.css-1howxi1-MuiTableCell-root{
+    font-size: 1em !important;
+    font-weight: 300 !important;
+}
