@@ -1,6 +1,10 @@
 import React from "react";
-import Links from './Links';
+import Links from "./Links";
 import Navbar from "./Navbar";
+import WorkHistory from "./WorkHistory";
+import StudiesBeforeSchool from "./StudiesBeforeSchool";
+import StudiesInSchool from "./StudiesInSchool";
+import Education from "./Education";
 
 function Article (props){
 
@@ -9,10 +13,22 @@ function Article (props){
     switch(props.id){
         case "myProjects":
             content = <Navbar />
-            break;
+        break;
         case "links":
             content = <Links />
-            break;
+        break;
+        case "workHistory":
+            content = <WorkHistory />
+        break;
+        case "studiesBeforeSchool":
+            content = <StudiesBeforeSchool />
+        break;
+        case "studiesInSchool":
+            content = <StudiesInSchool />
+        break;
+        case "education":
+                content = <Education />
+        break;
         default:
             break;
     }   
