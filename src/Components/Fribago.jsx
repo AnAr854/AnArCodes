@@ -31,7 +31,9 @@ const fribagoImgs = [{
 function Fribago (){
     return(
         <>
-            <p id="jumpToContent" class="projectDescription">Suurin projekti opintojen ohessa on loppukeväällä 2023 kolmen koulukaverin kanssa aloitettu sivusto frisbeegolf tulosten kirjaamiseen ja tilastointiin. Tällä hetkellä Fribago on testausvaiheessa rajatulla käyttäjämäärällä. Sivustossa on kiinnitetty huomiota responsiivisuuteen, koska todennäköinen käyttäjä käyttää sivustoa mobiililaitteella. Projekti etenee opintojen ohessa kokoajan. <br></br>Sivuston kuvat on otettu näyttökaappauksena tietokoneen näytöltä, mutta sivusto on kehitetty eritoten mobiililaitekäyttöön, koska suurin osa tulevista käyttäjistä tulee käyttämään sivustoa mobiililaitteella radalla ollessaan.<br></br>Alla olevissa kuvissa näkyy toimintoja, joiden toteutuksesta olen pääosin ollut vastuussa. Ryhmämme toimii nykyisin hyvin monipuolisesti vähän jokaisella osa-alueella, joten tästä olen saanut todella hyvää harjoitusta PHP, Javascript, MySQL, HTML ja CSS taitoihini.</p>
+            <p id="jumpToContent" class="projectDescription">Suurin projekti opintojen ohessa on loppukeväällä 2023 kolmen koulukaverin kanssa aloitettu sivusto frisbeegolf tulosten kirjaamiseen ja tilastointiin. Tällä hetkellä Fribago on testausvaiheessa rajatulla käyttäjämäärällä. Sivustossa on kiinnitetty huomiota responsiivisuuteen, koska todennäköinen käyttäjä käyttää sivustoa mobiililaitteella. Projekti etenee opintojen ohessa kokoajan. </p>
+            <p>Sivuston kuvat on otettu näyttökaappauksena tietokoneen näytöltä, mutta sivusto on kehitetty eritoten mobiililaitekäyttöön, koska suurin osa tulevista käyttäjistä tulee käyttämään sivustoa mobiililaitteella radalla ollessaan.</p>
+            <p>Alla olevissa kuvissa näkyy toimintoja, joiden toteutuksesta olen pääosin ollut vastuussa. Ryhmämme toimii nykyisin hyvin monipuolisesti vähän jokaisella osa-alueella, joten tästä olen saanut todella hyvää harjoitusta PHP, Javascript, MySQL, HTML ja CSS taitoihini.</p>
             <ProjectImagesContainer imagesToAdd={fribagoImgs} />
         </>
     )
