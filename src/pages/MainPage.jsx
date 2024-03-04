@@ -4,7 +4,6 @@ function MainPage (){
     return(
         <>
         <Article id="myProjects" heading="Projektit" />
-        <Article id="links" heading="Linkit sivuilleni muualla" />
         </>
     );
 }

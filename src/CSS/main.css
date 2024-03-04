@@ -116,7 +116,17 @@ article {
     padding: 3% 0;
     flex-direction: column;
 }
-
+.twoArticles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.halfWidthArticle{
+    width: 48%;
+}
+.halfWidthArticle > h1{
+    margin: 0;
+}
 .css-13xfq8m-MuiTabPanel-root{
     display: contents;
 }
@@ -162,6 +172,10 @@ hr {
 }
 
 /* TEXTS */
+h1{
+    font-size: 3rem;
+    margin: 0;
+}
 
 header h1{
     font-size: 8em; 
@@ -173,10 +187,6 @@ header h1{
     text-align: left;
     margin: auto;
     min-width: 80%;
-}
-
-h1{
-    font-size: 3rem;
 }
 
 .projectHeading {
@@ -192,13 +202,24 @@ h1{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-p, a {
+
+.smallerText{
+    text-indent: 3em;
+    font-size: 1em;
+    width: 95%;
+}
+p,a {
     font-size: 1.3rem;
-    font-weight: bolder;
-    max-width: 70%;
     padding-left: 2%;
 }
-
+a{
+    font-weight: bolder;
+    max-width: 70%;
+}
+p{
+    width: 90%;
+    text-indent: 2em;
+}
 header > a {
     margin-right: 5% !important;
     color: var(--darkMint) !important;
@@ -260,29 +281,19 @@ figcaption{
 }
 
 /* More About Me Page */
+#educAndWork{
+    display: flex; 
+    flex-direction: row;
+}
 ul{
     line-height: 2.5em;
 }
+ul#courses{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
 ul li{
     list-style-type: none;
-}
-
-td, th{
-    font-family: "Noto Serif Khojki", serif !important;
-    color: var(--creamWhite) !important;
-}
-th{
-    font-weight: bold !important;
-    font-size: 1.3em !important;
-}
-td{
-    font-weight: bolder !important;
-    font-size: 1.1em !important;
-}
-.MuiSvgIcon-root{
-    color: var(--creamWhite) !important;
-}
-th.MuiTableCell-root.MuiTableCell-head.MuiTableCell-sizeSmall.css-1howxi1-MuiTableCell-root{
-    font-size: 1em !important;
-    font-weight: 300 !important;
+    font-size: 1em;
 }
