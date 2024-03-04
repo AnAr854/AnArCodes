@@ -24,9 +24,30 @@
     header > h1{
         font-size: 2.5em !important;
     }
+    article >h1{
+        font-size: 2em;
+    }
     section.projectImages {
         grid-template-columns: 1fr !important;
         margin: 0em auto !important;
+    }
+    ul#courses{
+        columns: 1 !important;
+        -webkit-columns: 1 !important;
+        -moz-columns: 1 !important;
+        padding-left: 0;
+    }
+    .twoArticles{
+        flex-direction: column !important;
+    }
+    .halfWidthArticle{
+        width: 100% !important;
+    }
+    ul{
+        /* max-width: 100%; */
+        padding: 0 2% !important; 
+        align-self: flex-start !important;
+        margin-left: 5%;
     }
 }
 
@@ -37,11 +58,24 @@
     .css-1h9z7r5-MuiButtonBase-root-MuiTab-root, .css-1t4lqmc-MuiButtonBase-root-MuiTab-root, .css-1ocpf3a-MuiButtonBase-root-MuiTab-root {
         width: 100% !important;
     }
+    header{
+        grid-template-rows: 27% 33% 40%;
+    }
+    header > h2{
+        margin: 0;
+        font-size: 1.3em;
+    }
+    header > a{
+        font-size: 0.8em;
+    }
 }
 
 @media only screen and (max-width: 510px) {
     :root{
         font-size: 12px;
+    }
+    header > h1{
+        font-size: 1.2em !important;
     }
     header > h2{
         font-size: 1em;
@@ -49,11 +83,23 @@
     .projectDescription{
         min-width: 92%;
     }
+    ul#courses{
+       padding-left: 0.2em;
+    }
 }
 
 @media only screen and (max-width: 345px) {
     header > h1{
         font-size: 1.3em !important;
+    }
+    header > h2{
+        font-size: 0.8em;
+    }
+    header > a{
+        font-size: 0.7em;
+    }
+    article > h1{
+        font-size: 1.2em;
     }
 }
 
@@ -122,7 +168,7 @@ article {
     justify-content: space-between;
 }
 .halfWidthArticle{
-    width: 48%;
+    width: 47vw;
 }
 .halfWidthArticle > h1{
     margin: 0;
@@ -174,7 +220,7 @@ hr {
 /* TEXTS */
 h1{
     font-size: 3rem;
-    margin: 0;
+    margin:0 1em;
 }
 
 header h1{
@@ -204,9 +250,7 @@ header h1{
 }
 
 .smallerText{
-    text-indent: 3em;
     font-size: 1em;
-    width: 95%;
 }
 p,a {
     font-size: 1.3rem;
@@ -221,7 +265,6 @@ p{
     text-indent: 2em;
 }
 header > a {
-    margin-right: 5% !important;
     color: var(--darkMint) !important;
     text-decoration: none;
 }
@@ -296,4 +339,12 @@ ul#courses{
 ul li{
     list-style-type: none;
     font-size: 1em;
+    width: 100%;
+}
+u{
+        background-color: #FFFFF0;
+        background: linear-gradient(to right, var(--brightYellow), var(--brightYellow));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
 }
