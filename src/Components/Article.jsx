@@ -1,14 +1,15 @@
 import React from "react";
 import Links from "./Links";
 import Navbar from "./Navbar";
-import WorkHistory from "./WorkHistory";
 import StudiesBeforeSchool from "./StudiesBeforeSchool";
-import StudiesInSchool from "./StudiesInSchool";
 import Education from "./Education";
+import WorkHistory from "./WorkHistory";
+import Future from "./Future";
 
 function Article (props){
 
     let content = "";
+    let className = "box_shadow";
       
     switch(props.id){
         case "myProjects":
@@ -17,24 +18,26 @@ function Article (props){
         case "links":
             content = <Links />
         break;
+        case "education":
+            content = <Education />
+            className = className + " halfWidthArticle"
+        break;
         case "workHistory":
             content = <WorkHistory />
+            className = className + " halfWidthArticle"
         break;
         case "studiesBeforeSchool":
             content = <StudiesBeforeSchool />
         break;
-        case "studiesInSchool":
-            content = <StudiesInSchool />
-        break;
-        case "education":
-                content = <Education />
+        case "future":
+            content = <Future />
         break;
         default:
             break;
     }   
 
     return (
-        <article id={props.id} className="box_shadow">
+        <article id={props.id} className={className}>
             <h1>{props.heading}</h1>
             {content}
         </article>);
