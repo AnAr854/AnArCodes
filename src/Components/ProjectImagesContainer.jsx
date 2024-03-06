@@ -1,16 +1,27 @@
 import React from "react";
 
+function handleClick(event) {
+    event.preventDefault();
+    if(event.target.width > event.target.height){
+        event.target.classList.toggle("horizontalProjectFigureLarger");
+    }
+    if(event.target.width < event.target.height){
+        event.target.classList.toggle("verticalProjectFigureLarger");
+    }
+}
+
 function ProjectImagesContainer (props){
     let mapKey = 0;
 
        const images = props.imagesToAdd.map((img) =>
-            <figure key={mapKey++} >
+            
+            <figure key={mapKey++}>
                 <figcaption>{img.title}</figcaption>
-                <img src={img.src} class="projectImg" alt={props.alt}></img>
+                <img src={img.src} className="projectImg" alt={props.alt} onClick={handleClick}></img>
             </figure>
         );
         return(
-            <section class="projectImages">{images}</section>
+            <section className="projectImages">{images}</section>
         )
 }
 
