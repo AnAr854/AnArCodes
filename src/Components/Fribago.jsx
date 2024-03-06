@@ -13,11 +13,11 @@ const fribagoImgs = [{
     },
     {
       src: fribagoImgSource + 'fribago_kaverit.png',
-      title: 'Vaalea teema. Oletusteeman voi valita profiilista tai teemaa voi vaihtaa nopeasti yläpalkista.',
+      title: 'Viimeisimmässä päivityksessä lisätty vaalea teema, jonka vaihtomahdollisuuden toteutin. Oletusteeman voi valita profiilista tai teemaa voi vaihtaa nopeasti yläpalkista.',
     },
     {
         src: fribagoImgSource + 'fribago_vaylanpiirto.png',
-        title: 'Väyläkuvan voi lisätä kuvaamalla väylällä olevan kartan tai piirtää sivuston piirto-ohjelmalla.',
+        title: 'Väyläkuvan voi lisätä kuvaamalla väylällä olevan kartan tai piirtää sivuston piirto-ohjelmalla. Kaikki leimasimet olen "piirtänyt" itse käyttäen CSS.',
       },
       {
         src: fribagoImgSource + 'fribago_uutisetJaPalaute.png',
@@ -31,9 +31,11 @@ const fribagoImgs = [{
 function Fribago (){
     return(
         <>
-            <p id="jumpToContent" class="projectDescription">Suurin projekti opintojen ohessa on loppukeväällä 2023 kolmen koulukaverin kanssa aloitettu sivusto frisbeegolf tulosten kirjaamiseen ja tilastointiin. Tällä hetkellä Fribago on testausvaiheessa rajatulla käyttäjämäärällä. Sivustossa on kiinnitetty huomiota responsiivisuuteen, koska todennäköinen käyttäjä käyttää sivustoa mobiililaitteella. Projekti etenee opintojen ohessa kokoajan. </p>
-            <p>Sivuston kuvat on otettu näyttökaappauksena tietokoneen näytöltä, mutta sivusto on kehitetty eritoten mobiililaitekäyttöön, koska suurin osa tulevista käyttäjistä tulee käyttämään sivustoa mobiililaitteella radalla ollessaan.</p>
-            <p>Alla olevissa kuvissa näkyy toimintoja, joiden toteutuksesta olen pääosin ollut vastuussa. Ryhmämme toimii nykyisin hyvin monipuolisesti vähän jokaisella osa-alueella, joten tästä olen saanut todella hyvää harjoitusta PHP, Javascript, MySQL, HTML ja CSS taitoihini.</p>
+            <p id="jumpToContent">Suurin projekti opintojen ohessa on loppukeväällä 2023 kolmen koulukaverin kanssa aloitettu sivusto frisbeegolf tulosten kirjaamiseen ja tilastointiin. Tällä hetkellä Fribago on testausvaiheessa rajatulla käyttäjämäärällä. Projekti etenee opintojen ohessa kokoajan ja loma-aikoina vähän vauhdikkaammin. </p>
+            <p>Sivuston kuvat on otettu näyttökaappauksena tietokoneen näytöltä suuremman näkymän vuoksi. Sivustossa itsessään on kiinnitetty erityistä huomiota responsiivisuuteen, koska todennäköinen käyttäjä käyttää sivustoamme mobiililaitteella. </p>
+            <p>Tiimimme toimii hyvin yhteen ja kukin ottaa Jirasta tehtäviä hoitaakseen oman aikataulunsa, taitojensa tai haluamansa tekniikan harjoittelun mukaan. Ryhmämme toimiikin nykyisin hyvin monipuolisesti jokaisella osa-alueella tarvittaessa.</p>
+            <p>Alla olevissa kuvissa näkyy osa toiminnoista, joiden toteutuksesta olen pääosin ollut vastuussa. Näihin osiohin kuuluu uutisosiota, admin-toimintoja, osa profiilisivua, sivustonavigoinnin toteuttamista ja esimerkiksi helppokäyttöinen väylänpiirto mahdollisuus.</p>
+            <p>Tästä projektista olen saanut todella hyvää harjoitusta PHP, Javascript, JQuery, MySQL, HTML ja CSS taitoihini.</p>
             <ProjectImagesContainer imagesToAdd={fribagoImgs} />
         </>
     )

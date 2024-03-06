@@ -5,6 +5,7 @@ import StudiesBeforeSchool from "./StudiesBeforeSchool";
 import Education from "./Education";
 import WorkHistory from "./WorkHistory";
 import Future from "./Future";
+import MeNow from "./MeNow";
 
 function Article (props){
 
@@ -17,6 +18,9 @@ function Article (props){
         break;
         case "links":
             content = <Links />
+        break;
+        case "meNow":
+            content = <MeNow />
         break;
         case "education":
             content = <Education />
