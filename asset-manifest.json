@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AnArCodes/static/css/main.fbd4cf70.css",
+    "main.js": "/AnArCodes/static/js/main.0eda07fc.js",
+    "static/js/453.ace21015.chunk.js": "/AnArCodes/static/js/453.ace21015.chunk.js",
+    "index.html": "/AnArCodes/index.html",
+    "main.fbd4cf70.css.map": "/AnArCodes/static/css/main.fbd4cf70.css.map",
+    "main.0eda07fc.js.map": "/AnArCodes/static/js/main.0eda07fc.js.map",
+    "453.ace21015.chunk.js.map": "/AnArCodes/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbd4cf70.css",
+    "static/js/main.0eda07fc.js"
+  ]
+}
