@@ -1,5 +1,5 @@
 import React from 'react';
-import './CSS/main.css';
+import './css/main.css';
 import MoreAboutMe from './pages/MoreAboutMe';
 import MainPage from './pages/MainPage';
 import Article from './Components/Article';
