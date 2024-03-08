@@ -12,14 +12,14 @@ function Me(){
     };
     
     return(
-        <>
-        <img src="img/ilmanTaustaa2.png" id="mainPortrait" alt="self portrait"/>
-        <div id="headerTexts">
-            <h1>Anne Arhipoff</h1>
-            <h2>Innokas koodariopiskelija Suomussalmelta.</h2>
-            {linkInHeader}
-        </div>
-        </>
+        <header>
+        <img src="./img/ilmanTaustaa2.png" id="mainPortrait" alt="self portrait"/>
+            <div id="headerTexts">
+                <h1>Anne Arhipoff</h1>
+                <h2>Innokas koodariopiskelija Suomussalmelta.</h2>
+                {linkInHeader}
+            </div>
+        </header>
     )
 }
 
