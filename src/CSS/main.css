@@ -3,7 +3,7 @@
     :root{
         font-size: larger !important;
     }
-    .MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer > a{
+    .MuiTabs-flexContainer > a{
         font-size: 1.4em !important;
     }
 }
@@ -14,13 +14,13 @@
     .verticalProjectFigureLarger{
         min-width: 80% !important;
     }
-    .MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer > a{
+    .MuiTabs-flexContainer > a{
         font-size: 1.3em !important;
     }
 }
 
 @media only screen and (max-width: 1020px) { 
-    .css-heg063-MuiTabs-flexContainer {
+    .MuiTabs-flexContainer {
         width: 80vw !important;
     }
 }
@@ -50,13 +50,16 @@
         align-self: flex-start !important;
         margin-left: 5%;
     }
+    .longText{
+        font-size: 1.8em !important;
+    }
 }
 
 @media only screen and (max-width: 650px) {
-    .css-heg063-MuiTabs-flexContainer {
+    .MuiTabs-flexContainer {
         flex-direction: column !important;
     }
-    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root, .css-1t4lqmc-MuiButtonBase-root-MuiTab-root, .css-1ocpf3a-MuiButtonBase-root-MuiTab-root {
+    .MuiTab-root {
         width: 100% !important;
     }
     #headerTexts > h2{
@@ -162,37 +165,32 @@ article {
 .halfWidthArticle > h1{
     margin: 0;
 }
-.css-13xfq8m-MuiTabPanel-root{
-    display: contents;
+.MuiTabPanel-root{
+    width: 90%;
 }
-
-.css-heg063-MuiTabs-flexContainer {
-    display: flex;
-    justify-content: center;
+.MuiTabPanel-root > p{
+    width: 100%;
 }
-
 /**** PROJECT NAVIGATION ****/
-.css-1aquho2-MuiTabs-indicator {
+
+.MuiTabs-indicator {
     display: none;
 }
-.css-1ocpf3a-MuiButtonBase-root-MuiTab-root>.MuiTab-iconWrapper {
-    height: 50%;
-}
-.css-1h9z7r5-MuiButtonBase-root-MuiTab-root, .css-1t4lqmc-MuiButtonBase-root-MuiTab-root, .css-1ocpf3a-MuiButtonBase-root-MuiTab-root {
+.MuiTab-root {
     font-size: 1.7em !important;
     width: 50%;
     margin: auto;
     min-height: 4em !important;
     padding: 0 !important;
 }
-.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-1t4lqmc-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-1ocpf3a-MuiButtonBase-root-MuiTab-root.Mui-selected{
+.MuiTab-root.Mui-selected{
     border-bottom: #ffdf22 dotted 2px !important;
     border-radius: 50px;
 }
 .navLinks, .navLinks2, .navLinks3{
     margin-top: 1%;
 }
-.css-heg063-MuiTabs-flexContainer {
+.MuiTabs-flexContainer {
     width: 60vw;
     justify-content: space-around;
     align-items: center;
@@ -221,12 +219,17 @@ h1{
 }
 #headerTexts > a {
     color: var(--darkGrey) !important;
-    /* text-decoration: none; */
     font-weight: bolder;
     font-size: 1.3em;
 }
 .multicolorText{
     background-image: linear-gradient(to right, rgb(61, 7, 61), rgb(152, 25, 25), rgb(18, 18, 118), rgb(15, 112, 15), rgb(250, 165, 54), rgb(250, 232, 70));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.multicolorTextForHeading{
+    width: min-content;
+    background-image: linear-gradient(to left, rgb(61, 7, 61), rgb(152, 25, 25), rgb(18, 18, 118), rgb(15, 112, 15), rgb(250, 165, 54), rgb(250, 232, 70));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -241,7 +244,12 @@ p{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
+.fribagoTeam{
+    font-size: 1.5em !important;
+}
+.fribagoTeam{
+    font-size: 1.5em !important;
+}
 /* WORM GAME FRAME */
 
 iframe {

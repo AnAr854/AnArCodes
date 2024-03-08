@@ -6,7 +6,6 @@ import Article from './Components/Article';
 import Me from './Components/Me'
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-
 function App() {
 
   return (
