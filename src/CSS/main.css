@@ -245,11 +245,10 @@ p{
     justify-content: space-evenly;
 }
 .fribagoTeam{
+    color: var(--brightYellow);
     font-size: 1.5em !important;
 }
-.fribagoTeam{
-    font-size: 1.5em !important;
-}
+
 /* WORM GAME FRAME */
 
 iframe {
