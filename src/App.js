@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 function App() {
 
   return (
-    <Router>
+    <Router basename='/AnArCodes'>
     <Me />
       <Routes>
         <Route exact path="/" element={<MainPage />} />

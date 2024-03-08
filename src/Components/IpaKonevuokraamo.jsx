@@ -1,35 +1,33 @@
 import React from "react";
 import ProjectImagesContainer from "./ProjectImagesContainer";
 
-const ipaImgSource = "img/IPA Konevuokraamo/";
-
 const ipaImgs = [{
-    src: ipaImgSource + 'etusivu.png',
+    src: require('../../src/img/IPA Konevuokraamo/etusivu.png'),
     title: 'Staattisen version etusivu',
     alt: 'Kuvakaappaus konevuokraamon etusivusta',
   },
 {
-  src: ipaImgSource + 'vuokraus.png',
+  src: require('../../src/img/IPA Konevuokraamo/vuokraus.png'),
   title: 'Vuokraamon yksittäisen tuotteen tuotesivu',
   alt: 'Puutyökalujen vuokraussivun malli',
 },
   {
-    src: ipaImgSource + 'vuokraamoEtusivuWP.png',
+    src: require('../../src/img/IPA Konevuokraamo/vuokraamoEtusivuWP.png'),
     title: 'WordPress-version vuokraamon pääsivu',
     alt: 'Kuvakaappaus vuokrauspuolen etusivusta',
   },
   {
-    src: ipaImgSource + 'poistotuotteetJaFooterWP.png',
+    src: require('../../src/img/IPA Konevuokraamo/poistotuotteetJaFooterWP.png'),
     title: 'Poistotuotteita esittelevä galleria',
     alt: 'Kuvakaappaus footerin yllä olevasta poistotuote sliderista',
   },
   {
-    src: ipaImgSource + 'verkkokauppaWP.png',
+    src: require('../../src/img/IPA Konevuokraamo/verkkokauppaWP.png'),
     title: 'WordPress verkkokauppa',
     alt: 'Kuvakaappaus verkkokaupan hakutoiminnosta',
   },
   {
-    src: ipaImgSource + 'admin.png',
+    src: require('../../src/img/IPA Konevuokraamo/admin.png'),
     title: 'Ylläpitäjälle lisäys-, poisto- ja muokkaus-toiminnot',
     alt: 'Kuvakaappaus ylläpitäjän lisää-tuote osiosta',
   }];

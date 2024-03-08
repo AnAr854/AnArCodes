@@ -1,20 +1,18 @@
 import React from "react";
 import ProjectImagesContainer from "./ProjectImagesContainer";
 
-const OnnenpyoraImgSource = "img/onnenpyora/";
-
 const OnnenpyoraImgs = [{
-    src: OnnenpyoraImgSource + 'aloitus.png',
+    src: require('../../src/img/onnenpyora/aloitus.png'),
     title: 'Pelin aloitusnäkymä',
     alt: 'Kuvakaappaus pelin aloitusnäkymästä',
   },
   {
-    src: OnnenpyoraImgSource + 'pelitilanne.png',
+    src: require('../../src/img/onnenpyora/pelitilanne.png'),
     title: 'Kuva pelitilanteesta',
     alt: 'Kuvakaappaus osittain auenneesta tehtävästä pelin aikana',
   },
   {
-    src: OnnenpyoraImgSource + 'ratkaistaan.png',
+    src: require('../../src/img/onnenpyora/ratkaistaan.png'),
     title: 'Tehtävän ratkaisu',
     alt: 'Kuvakaappaus pelaajan ratkaistessa tehtävää',
   }]

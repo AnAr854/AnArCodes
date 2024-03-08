@@ -13,7 +13,7 @@ function Me(){
     
     return(
         <header>
-        <img src="./img/ilmanTaustaa2.png" id="mainPortrait" alt="self portrait"/>
+        <img src={require('../../src/img/ilmanTaustaa2.png')} id="mainPortrait" alt="self portrait"/>
             <div id="headerTexts">
                 <h1>Anne Arhipoff</h1>
                 <h2>Innokas koodariopiskelija Suomussalmelta.</h2>

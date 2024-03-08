@@ -1,30 +1,29 @@
 import React from "react";
 import ProjectImagesContainer from "./ProjectImagesContainer";
 
-const fribagoImgSource = "img/Fribago/";
 
 const fribagoImgs = [{
-    src: fribagoImgSource + 'fribago_etusivu.png',
+    src: require('../../src/img/Fribago/fribago_etusivu.png'),
     title: 'Fribagon etusivu kirjautumisen jälkeen.',
   },
   {
-      src: fribagoImgSource + 'fribago_profiili.png',
+      src: require('../../src/img/Fribago/fribago_profiili.png'),
       title: 'Pelaajan oma profiilisivu.',
     },
     {
-      src: fribagoImgSource + 'fribago_kaverit.png',
+      src: require('../../src/img/Fribago/fribago_kaverit.png'),
       title: 'Viimeisimmässä päivityksessä lisätty vaalea teema, jonka vaihtomahdollisuuden toteutin. Oletusteeman voi valita profiilista tai teemaa voi vaihtaa nopeasti yläpalkista.',
     },
     {
-        src: fribagoImgSource + 'fribago_vaylanpiirto.png',
+        src: require('../../src/img/Fribago/fribago_vaylanpiirto.png'),
         title: 'Väyläkuvan voi lisätä kuvaamalla väylällä olevan kartan tai piirtää sivuston piirto-ohjelmalla. Kaikki leimasimet olen "piirtänyt" itse käyttäen CSS.',
       },
       {
-        src: fribagoImgSource + 'fribago_uutisetJaPalaute.png',
+        src: require('../../src/img/Fribago/fribago_uutisetJaPalaute.png'),
         title: 'Etusivun uutis- ja palauteosio.',
       },
       {
-        src: fribagoImgSource + 'fribago_admin.png',
+        src: require('../../src/img/Fribago/fribago_admin.png'),
         title: 'Sivuston adminien toiminnot.',
       }];
 
