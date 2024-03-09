@@ -21,7 +21,7 @@ function Projects(props){
     var ChosenComponent = projects[props.projectName];
   
     return(
-        {ChosenComponent} ? <ChosenComponent /> : <h2>Valitsemaasi projektia ei löytynyt.</h2> 
+        {ChosenComponent} ? <><ChosenComponent /><a className="anchorLink" href="#backToNavigationAnchor">Takaisin projekteihin</a></> : <h2>Valitsemaasi projektia ei löytynyt.</h2> 
     )
 }
 

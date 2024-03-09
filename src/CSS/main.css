@@ -33,6 +33,10 @@
         grid-template-columns: 1fr !important;
         margin: 0em auto !important;
     }
+    /* figure{
+        width: 100%;
+        margin: 0;
+    } */
     ul#courses{
         columns: 1 !important;
         -webkit-columns: 1 !important;
@@ -244,9 +248,9 @@ p{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.fribagoTeam{
+.fribagoTeam, .githubLink, .anchorLink{
     color: var(--brightYellow);
-    font-size: 1.5em !important;
+    font-size: 1.1em !important;
 }
 
 /* WORM GAME FRAME */
@@ -270,10 +274,16 @@ iframe {
 section.projectImages {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    margin: 1em 2em;
+    margin: 1em 0;
+    justify-content: space-between;
+    align-items: end;
+}
+figure{
+    width: 98%;
+    margin: 0 auto 1em;
 }
 .projectImg{
-    width: 100% !important;
+    width: 100%;
     max-height: 90vh;
 }
 figcaption{
@@ -281,6 +291,7 @@ figcaption{
     display: flex;
     align-items: flex-end;
     font-size: 1.2em;
+    margin-bottom: 0.5em;
 }
 #wormGameImg{
     max-width: 70%;
