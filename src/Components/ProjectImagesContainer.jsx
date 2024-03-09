@@ -2,11 +2,13 @@ import React from "react";
 
 function handleClick(event) {
     event.preventDefault();
-    if(event.target.width > event.target.height){
-        event.target.classList.toggle("horizontalProjectFigureLarger");
-    }
-    if(event.target.width < event.target.height){
-        event.target.classList.toggle("verticalProjectFigureLarger");
+    if(window.innerWidth >= 800){
+        if(event.target.width > event.target.height){
+            event.target.classList.toggle("horizontalProjectFigureLarger");
+        }
+        if(event.target.width < event.target.height){
+            event.target.classList.toggle("verticalProjectFigureLarger");
+        }
     }
 }
 
