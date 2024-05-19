@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/AnArCodes/static/css/main.ebfc09d3.css",
-    "main.js": "/AnArCodes/static/js/main.1db583ca.js",
+    "main.css": "/AnArCodes/static/css/main.e9c94622.css",
+    "main.js": "/AnArCodes/static/js/main.99920f5f.js",
     "static/js/453.ace21015.chunk.js": "/AnArCodes/static/js/453.ace21015.chunk.js",
     "static/media/vuokraamoEtusivuWP.png": "/AnArCodes/static/media/vuokraamoEtusivuWP.d88f4c4993985ab35ebd.png",
     "static/media/etusivu.png": "/AnArCodes/static/media/etusivu.7236fdb175deaf99b0f1.png",
     "static/media/ilmanTaustaa2.png": "/AnArCodes/static/media/ilmanTaustaa2.b59fb43409ea23c98c8d.png",
     "static/media/vuokraus.png": "/AnArCodes/static/media/vuokraus.fe24d20f883028eb69f4.png",
+    "static/media/tyontekijanHallinta.png": "/AnArCodes/static/media/tyontekijanHallinta.583570f5f894ff6382d3.png",
+    "static/media/maaritaTyo.png": "/AnArCodes/static/media/maaritaTyo.aca76977af6956fb4713.png",
     "static/media/tositesyotto.png": "/AnArCodes/static/media/tositesyotto.55176ee2c84ceb13ae3a.png",
     "static/media/poistotuotteetJaFooterWP.png": "/AnArCodes/static/media/poistotuotteetJaFooterWP.e242074f31660bff1fa1.png",
     "static/media/verkkokauppaWP.png": "/AnArCodes/static/media/verkkokauppaWP.811cfcfb397232a894dc.png",
@@ -24,12 +26,12 @@
     "static/media/fribago_logo.ico": "/AnArCodes/static/media/fribago_logo.8b896ff7d7ac0e865887.ico",
     "static/media/wormGameImg.png": "/AnArCodes/static/media/wormGameImg.ac57a619eb98d16e0589.png",
     "index.html": "/AnArCodes/index.html",
-    "main.ebfc09d3.css.map": "/AnArCodes/static/css/main.ebfc09d3.css.map",
-    "main.1db583ca.js.map": "/AnArCodes/static/js/main.1db583ca.js.map",
+    "main.e9c94622.css.map": "/AnArCodes/static/css/main.e9c94622.css.map",
+    "main.99920f5f.js.map": "/AnArCodes/static/js/main.99920f5f.js.map",
     "453.ace21015.chunk.js.map": "/AnArCodes/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebfc09d3.css",
-    "static/js/main.1db583ca.js"
+    "static/css/main.e9c94622.css",
+    "static/js/main.99920f5f.js"
   ]
 }
