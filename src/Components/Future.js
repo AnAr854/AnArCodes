@@ -1,12 +1,17 @@
 import React from "react";
+import AcUnitIcon from '@mui/icons-material/AcUnit';
+
 
 function Future() {
 
     return (
-        <>
-            <p>Parhaillaan etsin alan harjoittelu-/työpaikkaa, opiskelen Udemyssä C++ -kieltä ja samalla annan enemmän aikaa Fribagolle, jotta saadaan piakkoin uudet päivitykset käyttäjille kesäksi kokeiluun. Syksyllä opinnoissa jatketaan mobiilikehityksen pariin.</p>
-            <p>Kesälomalla suuntaan perheineni jälleen rakkaan asuntoautoilun pariin aurinkoa etsimään.</p>
-        </>
+        <ul>
+            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Opiskelen viimeiset 15op kyberturvallisuutta.</li>
+            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Työskentelen nykyisessä päivätyössäni osittain lomautettuna tuotannollisista syistä.</li>
+            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Jatkan FribaGon ja tietysti uuden FribaMapin parissa.</li>
+            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Opettelen uutta, joka ei tällä kertaa liitykään koodaukseen, eli hapanjuurileivontaa.</li>
+            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Valmistaudun kylmään ja pitkään talveen.</li>
+        </ul>
     )
 }
 
