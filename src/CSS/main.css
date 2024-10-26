@@ -39,6 +39,10 @@
         margin: 0em auto !important;
     }
 
+    .mobileScreenShot {
+        max-width: 80%;
+    }
+
     ul#courses {
         columns: 1 !important;
         -webkit-columns: 1 !important;
@@ -221,7 +225,8 @@ article {
 .navLinks,
 .navLinks2,
 .navLinks3 {
-    margin-top: 1%;
+    /* margin-top: 1%; */
+    margin: 1% 2% 0 2%;
 }
 
 .MuiTabs-flexContainer {
@@ -309,7 +314,7 @@ iframe {
     max-width: 100%;
     align-self: end;
     max-height: 100%;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 /* PROJECT IMAGES */
@@ -328,6 +333,10 @@ figure {
 
 .projectImg {
     width: 100%;
+    max-height: 90vh;
+}
+
+.mobileScreenShot {
     max-height: 90vh;
 }
 
