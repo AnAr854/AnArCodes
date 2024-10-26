@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/AnArCodes/static/css/main.e9c94622.css",
-    "main.js": "/AnArCodes/static/js/main.99920f5f.js",
+    "main.css": "/AnArCodes/static/css/main.acdef830.css",
+    "main.js": "/AnArCodes/static/js/main.57ee74bc.js",
     "static/js/453.ace21015.chunk.js": "/AnArCodes/static/js/453.ace21015.chunk.js",
     "static/media/vuokraamoEtusivuWP.png": "/AnArCodes/static/media/vuokraamoEtusivuWP.d88f4c4993985ab35ebd.png",
     "static/media/etusivu.png": "/AnArCodes/static/media/etusivu.7236fdb175deaf99b0f1.png",
+    "static/media/mapView.png": "/AnArCodes/static/media/mapView.f3ef16783ceb68f8cfc4.png",
     "static/media/ilmanTaustaa2.png": "/AnArCodes/static/media/ilmanTaustaa2.b59fb43409ea23c98c8d.png",
     "static/media/vuokraus.png": "/AnArCodes/static/media/vuokraus.fe24d20f883028eb69f4.png",
     "static/media/tyontekijanHallinta.png": "/AnArCodes/static/media/tyontekijanHallinta.583570f5f894ff6382d3.png",
@@ -13,6 +14,9 @@
     "static/media/poistotuotteetJaFooterWP.png": "/AnArCodes/static/media/poistotuotteetJaFooterWP.e242074f31660bff1fa1.png",
     "static/media/verkkokauppaWP.png": "/AnArCodes/static/media/verkkokauppaWP.811cfcfb397232a894dc.png",
     "static/media/fribago_admin.png": "/AnArCodes/static/media/fribago_admin.08a31c3423ae4b53771c.png",
+    "static/media/instructions.png": "/AnArCodes/static/media/instructions.6ac4430600f6c91b7643.png",
+    "static/media/profilepage.png": "/AnArCodes/static/media/profilepage.ba466b4b52c0b46d9fc9.png",
+    "static/media/throwStats.png": "/AnArCodes/static/media/throwStats.964d8d3ae52839b7c9b3.png",
     "static/media/admin.png": "/AnArCodes/static/media/admin.5bfce4494f9251cfa041.png",
     "static/media/fribago_vaylanpiirto.png": "/AnArCodes/static/media/fribago_vaylanpiirto.6b29c8cc184796ce8aee.png",
     "static/media/fribago_etusivu.png": "/AnArCodes/static/media/fribago_etusivu.83437eb960465f2d5c95.png",
@@ -26,12 +30,12 @@
     "static/media/fribago_logo.ico": "/AnArCodes/static/media/fribago_logo.8b896ff7d7ac0e865887.ico",
     "static/media/wormGameImg.png": "/AnArCodes/static/media/wormGameImg.ac57a619eb98d16e0589.png",
     "index.html": "/AnArCodes/index.html",
-    "main.e9c94622.css.map": "/AnArCodes/static/css/main.e9c94622.css.map",
-    "main.99920f5f.js.map": "/AnArCodes/static/js/main.99920f5f.js.map",
+    "main.acdef830.css.map": "/AnArCodes/static/css/main.acdef830.css.map",
+    "main.57ee74bc.js.map": "/AnArCodes/static/js/main.57ee74bc.js.map",
     "453.ace21015.chunk.js.map": "/AnArCodes/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9c94622.css",
-    "static/js/main.99920f5f.js"
+    "static/css/main.acdef830.css",
+    "static/js/main.57ee74bc.js"
   ]
 }
