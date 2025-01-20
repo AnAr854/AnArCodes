@@ -6,11 +6,11 @@ function Future() {
 
     return (
         <ul>
-            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Opiskelen viimeiset 15op kyberturvallisuutta.</li>
+            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Opiskelen TypeScriptiä</li>
             <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Työskentelen nykyisessä päivätyössäni osittain lomautettuna tuotannollisista syistä.</li>
             <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Jatkan FribaGon ja tietysti uuden FribaMapin parissa.</li>
-            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Opettelen uutta, joka ei tällä kertaa liitykään koodaukseen, eli hapanjuurileivontaa.</li>
-            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Valmistaudun kylmään ja pitkään talveen.</li>
+            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Etsiskelen Open Source-projekteja</li>
+            <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Mietin opinnäytetyön aihetta.</li>
         </ul>
     )
 }
