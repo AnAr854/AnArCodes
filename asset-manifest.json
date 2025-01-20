@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AnArCodes/static/css/main.acdef830.css",
-    "main.js": "/AnArCodes/static/js/main.5e190882.js",
+    "main.js": "/AnArCodes/static/js/main.44df435f.js",
     "static/js/453.ace21015.chunk.js": "/AnArCodes/static/js/453.ace21015.chunk.js",
     "static/media/vuokraamoEtusivuWP.png": "/AnArCodes/static/media/vuokraamoEtusivuWP.d88f4c4993985ab35ebd.png",
     "static/media/etusivu.png": "/AnArCodes/static/media/etusivu.7236fdb175deaf99b0f1.png",
@@ -31,11 +31,11 @@
     "static/media/wormGameImg.png": "/AnArCodes/static/media/wormGameImg.ac57a619eb98d16e0589.png",
     "index.html": "/AnArCodes/index.html",
     "main.acdef830.css.map": "/AnArCodes/static/css/main.acdef830.css.map",
-    "main.5e190882.js.map": "/AnArCodes/static/js/main.5e190882.js.map",
+    "main.44df435f.js.map": "/AnArCodes/static/js/main.44df435f.js.map",
     "453.ace21015.chunk.js.map": "/AnArCodes/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.acdef830.css",
-    "static/js/main.5e190882.js"
+    "static/js/main.44df435f.js"
   ]
 }
