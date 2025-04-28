@@ -18,7 +18,6 @@ function ProjectImagesContainer(props) {
     const images = props.imagesToAdd.map((img) =>
         <figure key={mapKey++}>
             <figcaption>{img.title}</figcaption>
-            {console.log(img)}
             <img src={img.src} className={img.isMobileImg ? "mobileScreenShot" : "projectImg"} alt={props.alt} onClick={handleClick}></img>
         </figure>
     );
