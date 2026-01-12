@@ -25,6 +25,7 @@ function Navbar() {
           <Tab href="#jumpToContent" label="Portfolio" value="Portfolio" style={{ fontWeight: 600, color: "var(--lessBrightYellow" }} />
           <Tab href="#jumpToContent" label={`\u{1F331} Penan Puutarha \u{1F331}`} value="PenanPuutarha" style={{ fontWeight: 400, color: "lightgreen", textShadow: "1px 1px 2px black", fontFamily: "monospace" }} />
           <Tab href="#jumpToContent" label="Fribamap" value="Fribamap" style={{ fontSize: '1.5em', fontWeight: 600, fontFamily: '"Baloo Paaji 2"', color: '#7cffd5', padding: 0 }} />
+          <Tab href="#jumpToContent" label="Opinnäytetyö" value="Oppari" style={{ fontFamily: "Texturina", color: "var(--darkMint)", textTransform: "capitalize" }} />
         </TabList>
         <hr id="jumpToContent"></hr>
         <TabPanel value="Fribago"><Projects projectName={value} /></TabPanel>
@@ -35,6 +36,7 @@ function Navbar() {
         <TabPanel value="Portfolio"><Projects projectName={value} /></TabPanel>
         <TabPanel value="PenanPuutarha"><Projects projectName={value} /></TabPanel>
         <TabPanel value="Fribamap"><Projects projectName={value} /></TabPanel>
+        <TabPanel value="Oppari"><Projects projectName={value} /></TabPanel>
       </TabContext>
     </>
   );

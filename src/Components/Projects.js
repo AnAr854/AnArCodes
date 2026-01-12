@@ -6,7 +6,8 @@ import IpaKonevuokraamo from "./IpaKonevuokraamo";
 import Kirjanpitaja from "./Kirjanpitaja";
 import Portfolio from "./Portfolio";
 import PenanPuutarha from './PenanPuutarha';
-import Fribamap from './Fribamap'
+import Fribamap from './Fribamap';
+import Oppari from './Oppari';
 
 
 function Projects(props) {
@@ -19,7 +20,8 @@ function Projects(props) {
     Kirjanpitaja: Kirjanpitaja,
     Portfolio: Portfolio,
     PenanPuutarha: PenanPuutarha,
-    Fribamap: Fribamap
+    Fribamap: Fribamap,
+    Oppari: Oppari
   }
 
   var ChosenComponent = projects[props.projectName];
