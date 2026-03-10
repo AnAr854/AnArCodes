@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AnArCodes/static/css/main.f70af99a.css",
-    "main.js": "/AnArCodes/static/js/main.46da32cc.js",
+    "main.css": "/AnArCodes/static/css/main.6e016d04.css",
+    "main.js": "/AnArCodes/static/js/main.1dc28f44.js",
     "static/js/453.3f1fb51b.chunk.js": "/AnArCodes/static/js/453.3f1fb51b.chunk.js",
     "static/media/vuokraamoEtusivuWP.png": "/AnArCodes/static/media/vuokraamoEtusivuWP.d88f4c4993985ab35ebd.png",
     "static/media/etusivu.png": "/AnArCodes/static/media/etusivu.7236fdb175deaf99b0f1.png",
@@ -34,12 +34,12 @@
     "static/media/fribago_logo.ico": "/AnArCodes/static/media/fribago_logo.8b896ff7d7ac0e865887.ico",
     "static/media/wormGameImg.png": "/AnArCodes/static/media/wormGameImg.ac57a619eb98d16e0589.png",
     "index.html": "/AnArCodes/index.html",
-    "main.f70af99a.css.map": "/AnArCodes/static/css/main.f70af99a.css.map",
-    "main.46da32cc.js.map": "/AnArCodes/static/js/main.46da32cc.js.map",
+    "main.6e016d04.css.map": "/AnArCodes/static/css/main.6e016d04.css.map",
+    "main.1dc28f44.js.map": "/AnArCodes/static/js/main.1dc28f44.js.map",
     "453.3f1fb51b.chunk.js.map": "/AnArCodes/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f70af99a.css",
-    "static/js/main.46da32cc.js"
+    "static/css/main.6e016d04.css",
+    "static/js/main.1dc28f44.js"
   ]
 }
