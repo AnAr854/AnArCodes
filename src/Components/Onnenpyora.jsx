@@ -2,17 +2,17 @@ import React from "react";
 import ProjectImagesContainer from "./ProjectImagesContainer";
 
 const OnnenpyoraImgs = [{
-    src: require('../../src/img/onnenpyora/aloitus.png'),
+    src: new URL('../../src/img/onnenpyora/aloitus.png', import.meta.url).href,
     title: 'Pelin aloitusnäkymä',
     alt: 'Kuvakaappaus pelin aloitusnäkymästä',
   },
   {
-    src: require('../../src/img/onnenpyora/pelitilanne.png'),
+    src: new URL('../../src/img/onnenpyora/pelitilanne.png', import.meta.url).href,
     title: 'Kuva pelitilanteesta',
     alt: 'Kuvakaappaus osittain auenneesta tehtävästä pelin aikana',
   },
   {
-    src: require('../../src/img/onnenpyora/ratkaistaan.png'),
+    src: new URL('../../src/img/onnenpyora/ratkaistaan.png', import.meta.url).href,
     title: 'Tehtävän ratkaisu',
     alt: 'Kuvakaappaus pelaajan ratkaistessa tehtävää',
   }]

@@ -3,17 +3,17 @@ import ProjectImagesContainer from "./ProjectImagesContainer";
 
 
 const famCalImgs = [{
-    src: require('../../src/img/FamilyCalendar/paanakyma.jpg'),
+    src: new URL('../../src/img/FamilyCalendar/paanakyma.jpg', import.meta.url).href,
     title: 'Perhekalenterin päänäkymä.',
     alt: "Päänäkymä avattuna",
 },
 {
-    src: require('../../src/img/FamilyCalendar/statuksenVaihto.png'),
+    src: new URL('../../src/img/FamilyCalendar/statuksenVaihto.png', import.meta.url).href,
     title: 'Päivittäisen näkymän statuksen vaihtaminen.',
     alt: "Statuksen vaihtaminen avattuna",
 },
 {
-    src: require('../../src/img/FamilyCalendar/adminToiminnot.png'),
+    src: new URL('../../src/img/FamilyCalendar/adminToiminnot.png', import.meta.url).href,
     title: 'Pääkäyttäjän toiminnot.',
     alt: "Pääkäyttäjän toimintolista avattuna",
 }];

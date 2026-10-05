@@ -3,25 +3,25 @@ import ProjectImagesContainer from "./ProjectImagesContainer";
 
 
 const fribamapImgs = [{
-    src: require('../../src/img/FribaMap/instructions.png'),
+    src: new URL('../../src/img/FribaMap/instructions.png', import.meta.url).href,
     title: 'FribaMap ohjesivu.',
     alt: "Fribamap ohjesivun alkuosa",
     isMobileImg: true
 },
 {
-    src: require('../../src/img/FribaMap/profilepage.png'),
+    src: new URL('../../src/img/FribaMap/profilepage.png', import.meta.url).href,
     title: 'Pelaajan oma profiilisivu.',
     alt: "Profiilisivun alkuosa, jossa näkyy pelaajan tiedot",
     isMobileImg: true
 },
 {
-    src: require('../../src/img/FribaMap/throwStats.png'),
+    src: new URL('../../src/img/FribaMap/throwStats.png', import.meta.url).href,
     title: 'Ensimmäisten heittojen pituusjakauma',
     alt: "Profiilisivun lopussa oleva piirakkakaavio heittojen jakaumasta",
     isMobileImg: true
 },
 {
-    src: require('../../src/img/FribaMap/mapView.png'),
+    src: new URL('../../src/img/FribaMap/mapView.png', import.meta.url).href,
     title: 'Karttanäkymä. Jos tietokannasta löytyy tiin ja korin sijainnit, ne näkyvät kartalla. Jos tietokannassa ei vielä koordinaatteja ole, voidaan ne tallentaa sinne napin painalluksella.',
     alt: "Karttanäkymä, jossa näkyy tiin, korin ja pelaajan sijainnit.",
     isMobileImg: true

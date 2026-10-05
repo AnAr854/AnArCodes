@@ -1,9 +1,9 @@
 import React from "react";
-import AcUnitIcon from '@mui/icons-material/AcUnit';
+import AcUnitModule from '@mui/icons-material/AcUnit';
 
+const AcUnitIcon = AcUnitModule?.default ?? AcUnitModule;
 
 function Future() {
-
     return (
         <ul>
             <li><AcUnitIcon style={{ marginRight: "0.5em", color: "#ffdf22" }} />Syvennän taitojani aloittamalla uusia projekteja.</li>

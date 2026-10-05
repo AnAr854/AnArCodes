@@ -17,9 +17,9 @@ function Navbar() {
     <>
       <TabContext value={value}>
         <TabList className="navLinks" value={value} onChange={handleChange} aria-label="my projects choosing tabs">
-          <Tab href="#jumpToContent" label="Fribago" value="Fribago" icon={<img src={require('../../src/img/Fribago/fribago_logo.ico')} alt="Fribago logo" />} iconPosition='end' style={{ fontSize: '1.5em', fontWeight: 600, fontFamily: '"Baloo Paaji 2"', color: '#7cffd5', padding: 0 }} />
+          <Tab href="#jumpToContent" label="Fribago" value="Fribago" icon={<img src={new URL('../../src/img/Fribago/fribago_logo.ico', import.meta.url).href} alt="Fribago logo" />} iconPosition='end' style={{ fontSize: '1.5em', fontWeight: 600, fontFamily: '"Baloo Paaji 2"', color: '#7cffd5', padding: 0 }} />
           <Tab href="#jumpToContent" label="Matopeli" value="Matopeli" style={{ fontWeight: 600, fontFamily: 'Honk', letterSpacing: '5px', fontSize: '1.3em' }} />
-          <Tab href="#jumpToContent" value="Kirjanpitaja" icon={<img src={require('../../src/img/Kirjanpitaja/kirjanpitaja_logo.png')} alt="Kirjanpitäjä logo" height="45" backgroundcolor="#98B252" />} />
+          <Tab href="#jumpToContent" value="Kirjanpitaja" icon={<img src={new URL('../../src/img/Kirjanpitaja/kirjanpitaja_logo.png', import.meta.url).href} alt="Kirjanpitäjä logo" height="45" backgroundcolor="#98B252" />} />
           <Tab href="#jumpToContent" label={<span className="onnenpyoraTabLabel">Onnenpyörä</span>} value="Onnenpyora" style={{ fontWeight: 600 }} />
           <Tab href="#jumpToContent" label="IPA Konevuokraamo" value="IpaKonevuokraamo" style={{ fontWeight: 600, color: "#fb9d10", textShadow: "1px 1px 2px black", fontFamily: "Quantico" }} />
           <Tab href="#jumpToContent" label="Portfolio" value="Portfolio" style={{ fontWeight: 600, color: "var(--lessBrightYellow" }} />

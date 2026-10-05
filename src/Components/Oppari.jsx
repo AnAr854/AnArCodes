@@ -3,23 +3,23 @@ import ProjectImagesContainer from "./ProjectImagesContainer";
 
 const oppariImgs = [
     {
-        src: require('../../src/img/Oppari/leimausnaytto.png'),
+        src: new URL('../../src/img/Oppari/leimausnaytto.png', import.meta.url).href,
         title: 'Työntekijän leimausnäyttö.',
         alt: 'Leimausnäyttö työkohtaisin valintapainikkein ja sisään/ulos, sekä työnvaihdon aloitus- ja lopetuspainikkein.',
     }, {
-        src: require('../../src/img/Oppari/tyontekijanLeimaukset.png'),
+        src: new URL('../../src/img/Oppari/tyontekijanLeimaukset.png', import.meta.url).href,
         title: 'Leimausten korjausnäkymä.',
         alt: 'Leimaukset riveittäin tietoineen ja niihin yhdistetyt korjaus- ja poistopainikkeet..',
     }, {
-        src: require('../../src/img/Oppari/visualizerTaulut.png'),
+        src: new URL('../../src/img/Oppari/visualizerTaulut.png', import.meta.url).href,
         title: 'Tietokannan rakenne.',
         alt: 'Tietokannan taulujen yhteydet ja sisällöt graafisena piirroksena.',
     }, {
-        src: require('../../src/img/Oppari/pdfOsa1.png'),
+        src: new URL('../../src/img/Oppari/pdfOsa1.png', import.meta.url).href,
         title: 'PDF-tuntiraportin 1. sivu.',
         alt: 'Kuukauden jokainen leimaus riveittäin esitettynä PDF-tiedostossa.',
     }, {
-        src: require('../../src/img/Oppari/pdfOsa2.png'),
+        src: new URL('../../src/img/Oppari/pdfOsa2.png', import.meta.url).href,
         title: 'PDF-tuntiraportin 2. sivu.',
         alt: 'Kuukauden yhteenveto palkkaluokittain ja niihin eriteltyine tunteineen.',
     }];

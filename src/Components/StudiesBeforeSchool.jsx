@@ -1,7 +1,9 @@
 import React from "react";
-import AcUnitIcon from '@mui/icons-material/AcUnit';
+import AcUnitModule from '@mui/icons-material/AcUnit';
 
-function StudiesBeforeSchool (){
+const AcUnitIcon = AcUnitModule?.default ?? AcUnitModule;
+
+function StudiesBeforeSchool() {
 
     return (
         <>

@@ -2,12 +2,12 @@ import React from "react";
 import ProjectImagesContainer from "./ProjectImagesContainer";
 
 const penanPuutarhaImgs = [{
-    src: require('../../src/img/PenanPuutarha/tyontekijanHallinta.png'),
+    src: new URL('../../src/img/PenanPuutarha/tyontekijanHallinta.png', import.meta.url).href,
     title: 'CRUD-toiminnot',
     alt: 'Työntekijän hallintasivu kuvakaappauksena',
 },
 {
-    src: require('../../src/img/PenanPuutarha/maaritaTyo.png'),
+    src: new URL('../../src/img/PenanPuutarha/maaritaTyo.png', import.meta.url).href,
     title: 'Työtilauksen hallinta',
     alt: 'Työtilausten hallinta taulukko kuvakaappauksena',
 }];

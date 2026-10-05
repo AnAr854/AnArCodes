@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-const anneAvatar = `${process.env.PUBLIC_URL}/img/anne_avatar.svg`;
+
+const basePath = import.meta.env.BASE_URL || '/';
+const anneAvatar = `${basePath}img/anne_avatar.svg`;
 
 function Me() {
     let linkInHeader = "";

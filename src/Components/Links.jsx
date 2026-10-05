@@ -1,6 +1,9 @@
 import React from "react";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubModule from '@mui/icons-material/GitHub';
+import LinkedInModule from '@mui/icons-material/LinkedIn';
+
+const GitHubIcon = GitHubModule?.default ?? GitHubModule;
+const LinkedInIcon = LinkedInModule?.default ?? LinkedInModule;
 
 function Links(){
     return(

@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
 
   return (
-    <Router basename='/AnArCodes'>
+    <Router basename={import.meta.env.PROD ? '/AnArCodes' : '/'}>
       <Me />
       <Routes>
         <Route exact path="/" element={<MainPage />} />

@@ -3,6 +3,7 @@
   "homepage": "https://AnAr854.github.io/AnArCodes",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -18,16 +19,15 @@
     "react-dom": "^18.2.0",
     "react-router": "^7.12.0",
     "react-router-dom": "^7.12.0",
-    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "vite --host 0.0.0.0 --port 3000",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "vite build",
+    "test": "vitest run",
+    "preview": "vite preview --host 0.0.0.0 --port 4173"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +46,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "jsdom": "^30.1.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
   }
 }
