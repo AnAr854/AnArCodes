@@ -8,6 +8,7 @@ import Portfolio from "./Portfolio";
 import PenanPuutarha from './PenanPuutarha';
 import Fribamap from './Fribamap';
 import Oppari from './Oppari';
+import FamilyCalendar from './FamilyCalendar';
 
 
 function Projects(props) {
@@ -21,13 +22,14 @@ function Projects(props) {
     Portfolio: Portfolio,
     PenanPuutarha: PenanPuutarha,
     Fribamap: Fribamap,
-    Oppari: Oppari
+    Oppari: Oppari,
+    FamilyCalendar: FamilyCalendar
   }
 
   var ChosenComponent = projects[props.projectName];
 
   return (
-    { ChosenComponent } ? <><ChosenComponent /><a className="anchorLink" href="#backToNavigationAnchor">Takaisin projekteihin</a></> : <h2>Valitsemaasi projektia ei löytynyt.</h2>
+    ChosenComponent ? <ChosenComponent /> : <h2>Valitsemaasi projektia ei löytynyt.</h2>
   )
 }
 

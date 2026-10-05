@@ -1,30 +1,96 @@
-import React from "react";
-
-function handleClick(event) {
-    event.preventDefault();
-    if (window.innerWidth >= 800) {
-        if (event.target.width > event.target.height) {
-            event.target.classList.toggle("horizontalProjectFigureLarger");
-        }
-        if (event.target.width < event.target.height) {
-            event.target.classList.toggle("verticalProjectFigureLarger");
-        }
-    }
-}
+import React, { useEffect, useState } from "react";
 
 function ProjectImagesContainer(props) {
-    let mapKey = 0;
+    const [activeImage, setActiveImage] = useState(0);
+    const [zoomedImage, setZoomedImage] = useState(null);
+    const imagesToAdd = props.imagesToAdd;
 
-    const images = props.imagesToAdd.map((img) =>
-        <figure key={mapKey++}>
-            <figcaption>{img.title}</figcaption>
-            <img src={img.src} className={img.isMobileImg ? "mobileScreenShot" : "projectImg"} alt={props.alt} onClick={handleClick}></img>
-        </figure>
-    );
+    useEffect(() => {
+        if (!zoomedImage) {
+            return undefined;
+        }
+
+        const closeOnEscape = (event) => {
+            if (event.key === "Escape") {
+                setZoomedImage(null);
+            }
+        };
+
+        document.addEventListener("keydown", closeOnEscape);
+        return () => document.removeEventListener("keydown", closeOnEscape);
+    }, [zoomedImage]);
+
+    let gallery;
+    if (props.carousel) {
+        const image = imagesToAdd[activeImage];
+        const showImage = (index) => {
+            setActiveImage((index + imagesToAdd.length) % imagesToAdd.length);
+        };
+
+        gallery = (
+            <section className="projectImages projectCarousel" aria-label="Projektikuvat">
+                <figure>
+                    <figcaption>{image.title}</figcaption>
+                    <img
+                        src={image.src}
+                        className={image.isMobileImg ? "mobileScreenShot" : "projectImg"}
+                        alt={image.alt}
+                        onClick={() => setZoomedImage(image)}
+                    />
+                    <div className="carouselControls">
+                        <button type="button" aria-label="Edellinen kuva" onClick={() => showImage(activeImage - 1)}>
+                            &#8592;
+                        </button>
+                        <span aria-live="polite">{activeImage + 1} / {imagesToAdd.length}</span>
+                        <button type="button" aria-label="Seuraava kuva" onClick={() => showImage(activeImage + 1)}>
+                            &#8594;
+                        </button>
+                    </div>
+                </figure>
+            </section>
+        );
+    } else {
+        gallery = (
+            <section className="projectImages">
+            {imagesToAdd.map((img) =>
+                    <figure key={img.src}>
+                        <figcaption>{img.title}</figcaption>
+                        <img
+                            src={img.src}
+                            className={img.isMobileImg ? "mobileScreenShot" : "projectImg"}
+                            alt={img.alt}
+                            onClick={() => setZoomedImage(img)}
+                        />
+                    </figure>
+            )}
+            </section>
+        );
+    }
+
     return (
-        <section className="projectImages">{images}</section>
+        <>
+            {gallery}
+            {zoomedImage && (
+                <div className="imageZoomOverlay" onClick={(event) => {
+                    if (event.target === event.currentTarget) {
+                        setZoomedImage(null);
+                    }
+                }}>
+                    <div className="imageZoomDialog" role="dialog" aria-modal="true" aria-label={zoomedImage.alt}>
+                        <button className="imageZoomClose" type="button" aria-label="Sulje suurennettu kuva" onClick={() => setZoomedImage(null)}>
+                            &times;
+                        </button>
+                        <img
+                            className="imageZoomed"
+                            src={zoomedImage.src}
+                            alt={zoomedImage.alt}
+                            onClick={() => setZoomedImage(null)}
+                        />
+                    </div>
+                </div>
+            )}
+        </>
     )
 }
 
 export default ProjectImagesContainer;
-

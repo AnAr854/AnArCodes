@@ -1,6 +1,7 @@
 import React from 'react';
-import './CSS/main.css';
-// import '../src/CSS/main.css'
+// import './CSS/main.css';
+// Uncomment to preview the optional redesign.
+import './CSS/modern-preview.css';
 import MoreAboutMe from './pages/MoreAboutMe';
 import MainPage from './pages/MainPage';
 import Article from './Components/Article';

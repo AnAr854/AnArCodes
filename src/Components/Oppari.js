@@ -21,18 +21,21 @@ const oppariImgs = [
     }, {
         src: require('../../src/img/Oppari/pdfOsa2.png'),
         title: 'PDF-tuntiraportin 2. sivu.',
-        alt: 'Kuukauden yhteenveto palkkaluokittain ja niiin eriteltyine tunteineen.',
+        alt: 'Kuukauden yhteenveto palkkaluokittain ja niihin eriteltyine tunteineen.',
     }];
 
 function Oppari() {
     return (
         <>
             <h2>Opinnäytetyö 2025</h2>
-            <p>Opinnäytetyössäni valmistin mallisovelluksen leimaustyyppiseen työaikakirjaamiseen pienille yrityksille.</p>
-            <p>Sovellus valmistui hyvin käyttökelpoisena versiona, josta pystyisi pienin muokkauksin tukemaan erilaisten yritysten tarpeita. Tärkeimpänä puutteena sovelluksessa on validointien puute ja tietokannan varmuuskopioinnin puute.</p>
-            <p>Opinnäytetyöni suorittamiseen käytin seuraavia ohjelmistoja/teknologioita: Figma, pgAdmin, PostgreSQL, JavaScript, Node.js, Express.js, PDFKit, EJS, HTML, CSS, Trello </p>
-            <p>Koko opinnäytetyö löytyy julkaistuna <a href="https://urn.fi/URN:NBN:fi:amk-2025090424423" target="blank" class="theseusLink ">Theseuksesta.</a></p>
-            <ProjectImagesContainer imagesToAdd={oppariImgs} />
+            <div className="projectDescription">
+                <p>Opinnäytetyössäni valmistin mallisovelluksen leimaustyyppiseen työaikakirjaamiseen pienille yrityksille.</p>
+                <p>Sovellus valmistui hyvin käyttökelpoisena versiona, josta pystyisi pienin muokkauksin tukemaan erilaisten yritysten tarpeita. Tärkeimpänä puutteena sovelluksessa on validointien puute ja tietokannan varmuuskopioinnin puute.</p>
+                <p>Tässä projektissa pääsin kokeilemaan minulle uutta PostgreSQL-tietokantaa, jonka rakenteen suunnittelin tietysti itse. Samalla opin tietokantafunktioista ja tietokantakyselyistä.</p>
+                <p>Opinnäytetyöni suorittamiseen käytin seuraavia ohjelmistoja/teknologioita: Figma, pgAdmin, PostgreSQL, JavaScript, Node.js, Express.js, PDFKit, EJS, HTML, CSS, Trello </p>
+                <p>Koko opinnäytetyö löytyy julkaistuna <a href="https://urn.fi/URN:NBN:fi:amk-2025090424423" target="blank" class="theseusLink ">Theseuksesta.</a></p>
+            </div>
+            <ProjectImagesContainer imagesToAdd={oppariImgs} carousel />
         </>
     )
 }

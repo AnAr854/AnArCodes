@@ -21,9 +21,11 @@ function Onnenpyora (){
     return(
         <>
             <h2 className="multicolorTextForHeading longText" style={{ fontWeight: 1200, fontSize:"3em" }}>ONNENPYÖRÄ</h2>
-            <p>Ensimmäisenä kouluvuonna opintoihin kuului Javaa. Koulukaverin ideasta kehitimme muutaman opiskelijan kesken Java-version klassisesta Onnenpyörä-visailusta. Lisää oppiaksemme valitsimme käyttöliitymäksi Java Swingin.</p>
-            <p>Pelitoiminnallisuuden osilta koodasin vuoronvaihdot ja niihin liittyvät toiminnot ja osia pisteenlaskusta, sekä pelaajan nimen ja pisteiden näkyvyyden pelatessa. Myös valitun konsonantin ja ostetun vokaalin etsintä, ohisektorin toiminnallisuudet ja ratkaisumetodi on omaa tuotantoa.</p>
-            <ProjectImagesContainer imagesToAdd={OnnenpyoraImgs} />
+            <div className="projectDescription">
+                <p>Ensimmäisenä kouluvuonna opintoihin kuului Javaa. Koulukaverin ideasta kehitimme muutaman opiskelijan kesken Java-version klassisesta Onnenpyörä-visailusta. Lisää oppiaksemme valitsimme käyttöliitymäksi Java Swingin.</p>
+                <p>Pelitoiminnallisuuden osilta koodasin vuoronvaihdot ja niihin liittyvät toiminnot ja osia pisteenlaskusta, sekä pelaajan nimen ja pisteiden näkyvyyden pelatessa. Myös valitun konsonantin ja ostetun vokaalin etsintä, ohisektorin toiminnallisuudet ja ratkaisumetodi on omaa tuotantoa.</p>
+            </div>
+            <ProjectImagesContainer imagesToAdd={OnnenpyoraImgs} carousel />
         </>
     )
 }
